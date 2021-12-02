@@ -96,7 +96,8 @@ public class SnapServerInfo implements net.md_5.bungee.api.config.ServerInfo {
 
     @Override
     public void sendData(String channel, byte[] data) {
-        server.sendPluginMessage(SnapUtils.createChannelIdentifier(channel), data);
+        snap.unsupported();
+        return null;
     }
 
     @Override
